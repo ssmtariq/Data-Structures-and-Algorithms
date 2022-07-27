@@ -10,8 +10,10 @@ public class RotateArray {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] nums = {1,2,3,4,5,6,7};
+//		int[] nums = {1,2,3,4,5,6,7};
+		int[] nums = {1,2,3,4,5};
 //		int[] nums = {-1};
+//		int[] nums = {1,2};
 //		int[] nums = {-1,-100,3,99};
 		rotate(nums, 3);
 		for (int i = 0; i < nums.length; i++) {
@@ -27,6 +29,9 @@ public class RotateArray {
     			nums[index] = array[i];
     			index++;
     		}
+//
+
+
         	for (int i = 0; i < k; i++) {
     			nums[i] = array[nums.length-k+i];
     		}
